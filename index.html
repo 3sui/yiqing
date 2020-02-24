@@ -1,0 +1,1131 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?a844feb7fe44f4cd3e02552cde4fc8f3";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>在线协同，共抗疫情 - 航天云网，国家工业互联网平台</title>
+    <meta name="keywords"
+        content="工业互联网、智能制造、航天科工、工业大数据、智能生产、工业服务、产业互联网、资源共享、能力协同、mes、智能化改造、云制造认证、云制造金融、crp、cpdm、数据淘金、企业上云、航网互联、中小企业" />
+    <meta name="description"
+        content="航天科工积极响应国家战略部署，以互联网、云计算、大数据技术的应用为基础，打造国家首个工业互联网公共服务平台——航天云网，以云制造产业集群生态，兼容智能制造、协同制造和云制造三种现代制造形式，运用大数据和人工智能技术以及第三方商业与金融资源，打造“创新与创业相结合、线上与线下相结合、制造与服务相结合”新业态，为企业提供全网营销、供应链管理、智能制造解决方案、工业大数据和双创等全要素服务" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no" />
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8" async></script>
+    <script>
+        var cdnSessionId = randomString(8);
+        var startTime = new Date().getTime();
+
+        if (!window.cdnSession) {
+            window.cdnSession = {};
+        }
+
+
+        window.cdnSession = {
+            "id": cdnSessionId,
+            "nodeid": "res_v2/\js/\common.js",
+            "value": "",
+            "version": "",
+            "duration": "",
+            "type": "js",
+        };
+
+        window.jsTimer = window.setTimeout(function () {
+            try {
+                window.cdnSession.value = "error";
+                spmSourceLoadError(window.cdnSession);
+            } catch (err) {}
+        }, 12000);
+
+
+
+        function randomString(len) {
+            len = len || 32;
+
+            var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
+            var maxPos = $chars.length;
+            var pwd = '';
+            for (var i = 0; i < len; i++) {
+                pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
+            }
+            return pwd;
+        }
+
+        function spmSourceLoadError(dataObj) {
+            var userId = HT.user.data.userInfo ? HT.user.data.userInfo.id : null;
+            var htId = "";
+            try {
+                htId = getCookie('_htid');
+            } catch (e) {
+
+            }
+
+
+            var scene = "static_resource";
+
+            if (dataObj) {
+                dataObj.uid = userId;
+                dataObj.scene = scene;
+                dataObj.action = 'load';
+                dataObj.did = htId;
+
+                var clientIp = "";
+                var clientCity = "";
+                var ipVersion = "";
+                try {
+                    clientIp = returnCitySN["cip"];
+                    clientCity = returnCitySN["cname"];
+                    if (clientIp.split('.').length > 0) {
+                        ipVersion = 'ipv4';
+                    } else {
+                        ipVersion = 'ipv6';
+                    }
+                } catch (e) {
+
+                }
+
+                dataObj.clientip = clientIp;
+                dataObj.clientcity = clientCity;
+                dataObj.ipversion = ipVersion;
+
+                var timeStamp = '20190808';
+                dataObj.version = timeStamp;
+
+                var endTime = new Date().getTime();
+                dataObj.duration = endTime - startTime;
+
+                dataObj.ds = 'h5';
+                dataObj.appid = '670';
+            }
+
+            post(dataObj);
+
+            function getCookie(name) {
+                var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+                if (arr = document.cookie.match(reg)) {
+                    return unescape(arr[2]);
+                } else {
+                    return null;
+                }
+            }
+
+            function post(data) {
+                try {
+                    if (!data) {
+                        return;
+                    }
+
+                    var params = [];
+                    for (var key in data) {
+                        params.push(key + "=" + encode(data[key]));
+                    }
+                    params.push("_rand=" + Math.floor(2147483648 * Math.random()));
+                    (new Image).src = "https://stat.htres.cn/log?" + params.join("&");
+                } catch (e) {}
+
+                function encode(s) {
+                    return encodeURIComponent(s || '');
+                }
+            }
+
+            function encode(s) {
+                return encodeURIComponent(s || '');
+            }
+        }
+    </script>
+
+    <link href="https://cdn.htres.cn/res_v2/images/favicon.ico" rel="shortcut icon" />
+    <!-- <link rel="stylesheet" href="https://cdn.htres.cn/res_v2/scenes/assets/css/bootstrap.min.css" /> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.htres.cn/res_v2/scenes/assets/css/swiper.min.css">
+
+    <link rel="stylesheet" href="https://cdn.htres.cn/res_v2/scenes/assets/css/common.css?version=v20200215001">
+
+    <link rel="stylesheet" href="https://cdn.htres.cn/res_v2/css/com_web.css?version=v20200215001">
+
+    <link rel="stylesheet" href="https://ui.htres.cn/v5/res/css/yunluui-2.1.4.css" />
+
+    <link rel="stylesheet" href="https://cdn.htres.cn/res_v2/css/compontent/common.css?version=v20200215001">
+
+    <link rel="stylesheet" href="https://cdn.htres.cn/res_v2/yunlu-ui/css/modal.css?version=v20200215001">
+
+    <link rel="stylesheet" href="https://cdn.htres.cn/res_v2/css/iconfont/iconfont_frame.css">
+    <link rel="stylesheet" href="https://cdn.htres.cn/res_v2/css/iconfont/iconfont_home.css">
+
+    <!-- <script src="https://cdn.htres.cn/res_v2/scenes/assets/js/jquery-3.1.1.min.js"></script> -->
+    <script src="./js/jquery.min.js"></script>
+
+
+    <script src="https://cdn.htres.cn/res_v2/js/common.js?version=v20200215001"></script>
+    <script src="https://cdn.htres.cn/res_v2/js/htyw_ul.js?version=v20200215001"></script>
+
+    <script src="https://cdn.htres.cn/res_v2/yunlu-ui/js/plugins/modal.js?version=v20200215001"></script>
+
+    <script src="https://cdn.htres.cn/res_v2/js/new_common.js?version=v20200215001"></script>
+
+    <script src="https://cdn.htres.cn/res_v2/iconfont/js/iconfont.js"></script>
+
+    <script src="https://cdn.htres.cn/res_v2/js/com_web.js?version=v20200215001"></script>
+
+    <script src="https://cdn.htres.cn/res_v2/scenes/assets/js/swiper.jquery.min.js"></script>
+
+    <script src="https://cdn.htres.cn/res_v2/yunlu-ui/js/plugins/pagination.js?version=v20200215001"></script>
+
+    <script type="text/javascript">
+        function checkTicket() {
+            var img = new Image();
+            img.onerror = function () {
+                $.getScript('/utils/sso.jsp?cb=HT.user.login');
+            };
+            img.src = '/login_ticket?_=' + new Date().valueOf();
+        }
+
+        document.writeln('<script src="/utils/sso.jsp?cb=HT.user.login&ct=checkTicket&_=' + new Date().valueOf() +
+            '"></sc' + 'ript>');
+
+
+        var _urlMatchActionArray = [];
+
+        $(function () {
+            HT.user.addListener(function (userInfo, loginUrl, logoutUrl) {
+                var outUrl = logoutUrl.replace(/%s/, encodeURIComponent(window.location.href));
+                var nowUrl = loginUrl.replace(/%s/, encodeURIComponent(window.location.href));
+                var userInfoObj = {};
+                userInfoObj = $.extend(userInfoObj, userInfo);
+                userInfoObj.loginUrl = nowUrl;
+                userInfoObj.logoutUrl = outUrl;
+                userInfoObj.orgname = [];
+                if (userInfo) {
+                    var data = getList();
+                    if (data.data) {
+                        userInfoObj.orgname = data.data;
+                    }
+                    if (data.isJoinCompany) {
+                        userInfoObj.isJoinCompany = true;
+                    } else {
+                        userInfoObj.isJoinCompany = false;
+                    }
+
+                }
+                yunluLogin(userInfoObj);
+            });
+
+            function getList() {
+                var url = '/uc/employee/list';
+                var getData = {
+                    data: [],
+                    isJoinCompany: false
+                };
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: 'json',
+                    data: {},
+                    cache: 'false',
+                    async: false,
+                    success: function (data) {
+                        if (data.code === 200) {
+                            getData.data = data.data;
+                        } else if (data.code == 1201) {
+                            if (data.data == null) {
+                                getData.isJoinCompany = true;
+                            } else {
+                                getData.isJoinCompany = false;
+                            }
+                        }
+                    }
+                });
+                return getData;
+            }
+
+            var redirectStr = '';
+            $('.user-info .join-company').on('click', function () {
+                $.ajax({
+                    url: '/uc/employee/redirect_uc',
+                    type: 'GET',
+                    dataType: 'json',
+                    data: {},
+                    cache: 'false',
+                    async: false,
+                    success: function (data) {
+                        if (data.code == 0) {
+                            redirectStr = data.data;
+                        }
+                    },
+                    error: function () {}
+                });
+                window.location.href = redirectStr;
+            });
+            // (function(){
+            //     var top = $('.yunlu-footer').offset().top;
+            //     var height = $('.yunlu-footer').height();
+            //     var vheight = $(window).height();
+            //     if((top + height) < vheight){
+            //         $('.yunlu-footer').css({"margin-top":(vheight - top - height) + 'px'});
+            //     }
+            // })();
+        })
+    </script>
+    <link rel="stylesheet" href="https://cdn.htres.cn/res_v2/css/activity_events/yiqing.css?version=v20200215001">
+
+    <script src="https://cdn.htres.cn/res_v2/yunlu-ui/js/plugins/forms.js?version=v20200215001"></script>
+
+    <link rel="stylesheet" href="http://ico.z01.com/zico.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="main-content">
+
+        <div class="summit-header">
+            <a href="http://changzhou.casicloud.com/view" target="_top" class="summit-header-logo">
+                <img src="http://www.casicloud.com/res_v2/images/com_web/com_logo.svg" alt="航天云网">
+            </a>
+            <a href="http://changzhou.casicloud.com/view" target="_top" class="summit-header-title">常州工业物联大数据平台</a>
+        </div>
+        <div class="module-container header">
+            <div class="module-content">
+                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/pageTitle-pc.png" alt=""
+                    class="img-pc pageTitle">
+                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/pageTitle-m.png" alt=""
+                    class="img-m pageTitle">
+                <p>
+                    疫情危急，众志成城！<span class="img-m"></span>航天云网复工复产云端应用工具免费开放！<br>
+                    <span class="img-m" style="height:11px;"></span>
+                    保障企业恢复生产，守护员工身心健康，<span class="img-m"></span>让科技成为抗击疫情的坚实后盾！
+                </p>
+            </div>
+        </div>
+
+        <div class="module-container fixed-nav">
+            <div class="module-content">
+
+                <div id="fixedNav">
+                    <ul>
+                        <li class="active">
+                            <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/icon-ycbg-pc.png" alt=""
+                                class="img-pc">
+                            <span>复工复产</span>
+                        </li>
+                        <li>
+                            <img src="./img/pingtai.png" alt="" class="img-pc" width="26px">
+                            <span>疫情管理</span>
+                        </li>
+                        <li>
+                            <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/icon-fywzxq-pc.png"
+                                alt="" class="img-pc">
+                            <span>人员流动轨迹查询</span>
+                        </li>
+                        <li>
+                            <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/icon-yqxx-pc.png" alt=""
+                                class="img-pc">
+                            <span>疫情信息</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="placeholderBox"></div>
+
+        <div class="module-container floor">
+            <div class="module-content">
+
+                <div class="module-title" style="margin:0 auto 0px">
+                    <h3>企业复工复产工具集</h3>
+                    <p>保障企业恢复生产，守护员工身心健康</p>
+                </div>
+
+                <div class="main-title1" style="margin-bottom: 23px;line-height: 36px;">
+                    <!-- <div class="left">
+                        云端业务
+                    </div> -->
+                    <div class="right">
+                        <a href="./appList.html" style="font-size: 16px">查看更多APP>></a>
+                    </div>
+                </div>
+                <div class="container-fluid app-container pt-2 px-0">
+                    <div class="row">
+                        <div class="text-center col-md-4 col-12">
+                            <div class="app-box">
+                                <img src="http://file1.casicloud.com/e1a34773479c47d39fff2e950ff53039.jpg" alt="">
+                                <p class="app-title" title="航天云信(云端办公)">航天云信(云端办公)</p>
+                                <p class="app-info"
+                                    title="云信具有与微信一致的沟通体验，支持云化和私有化部署，PC和手机端，拥有语音会议、视频会议、桌面共享、文档共享、员工体温汇报、外出审批、日程管理、邮件管理、集团信息管理等功能。">
+                                    云信具有与微信一致的沟通体验，支持云化和私有化部署，PC和手机端，拥有语音会议、视频会议、桌面共享、文档共享、员工体温汇报、外出审批、日程管理、邮件管理、集团信息管理等功能。
+                                </p>
+                                <p class="app-price">疫情期间免费使用</p>
+                                <span class="app-buy"><a href="./hangtianyunxin.html" target="_blank">立即使用</a></span>
+                            </div>
+                        </div>
+                        <div class="text-center col-md-4 col-12">
+                            <div class="app-box">
+                                <img src="http://file1.casicloud.com/e1a34773479c47d39fff2e950ff53039.jpg" alt="">
+                                <p class="app-title" title="云物流（云端业务）">云物流(云端业务)</p>
+                                <p class="app-info"
+                                    title="从用户角度出发，为企业提供降本、增效、阳光、透明的快递物流集成服务，疫情期间，航天云网云物流还与顺丰速运联手竭诚服务医疗物资调度。">
+                                    从用户角度出发，为企业提供降本、增效、阳光、透明的快递物流集成服务，疫情期间，航天云网云物流还与顺丰速运联手竭诚服务医疗物资调度。
+                                </p>
+                                <p class="app-price">疫情期间免费使用</p>
+                                <span class="app-buy"><a href="./yunwuliu.html" target="_blank">立即使用</a></span>
+                            </div>
+                        </div>
+                        <div class="text-center col-md-4 col-12">
+                            <div class="app-box">
+                                <img src="http://file1.casicloud.com/e1a34773479c47d39fff2e950ff53039.jpg" alt="">
+                                <p class="app-title" title=" SAP Business One(云端业务)">SAP Business One(云端业务)</p>
+                                <p class="app-info"
+                                    title="B1是一套专为中小型企业量身打造，价格合理、易于实施的综合业务管理解决方案。包含运营所有核心功能，管理、财务会计、银行业务、销售、采购、客户关系管理、库存控制、制造、管理会计核算和报告。相对SAP ECC，B1的实施成本低，实施周期短。">
+                                    B1是一套专为中小型企业量身打造，价格合理、易于实施的综合业务管理解决方案。包含运营所有核心功能，管理、财务会计、银行业务、销售、采购、客户关系管理、库存控制、制造、管理会计核算和报告。相对SAP
+                                    ECC，B1的实施成本低，实施周期短。
+                                </p>
+                                <p class="app-price">价格优惠</p>
+                                <span class="app-buy"><a href="./sapbusiness.html" target="_blank">立即使用</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container-fluid app-container pt-2 px-0">
+                    <div class="row">
+                        <div class="text-center col-md-4 col-12">
+                            <div class="app-box">
+                                <img src="http://file1.casicloud.com/e1a34773479c47d39fff2e950ff53039.jpg" alt="">
+                                <p class="app-title" title="航天云网企业驾驶舱">航天云网企业驾驶舱</p>
+                                <p class="app-info"
+                                    title="企业驾驶舱主要面向企业经理层，为企业提供指挥、决策、控制等功能。其核心功能根据企业的业务组成特点划分为五大业务子板块。一方面提供多方面数据信息的分析。另一方面提供业务全流程数据的报表平台与报告平台，且基于智能生成模式并辅助人工整理的支持，可以进行更深度更完善的数据分析与业务管理应用。">
+                                    企业驾驶舱主要面向企业经理层，为企业提供指挥、决策、控制等功能。其核心功能根据企业的业务组成特点划分为五大业务子板块。一方面提供多方面数据信息的分析。另一方面提供业务全流程数据的报表平台与报告平台，且基于智能生成模式并辅助人工整理的支持，可以进行更深度更完善的数据分析与业务管理应用。
+                                </p>
+                                <p class="app-price">疫情期间免费使用</p>
+                                <span class="app-buy"><a href="./qiyejiashicang.html" target="_blank">立即使用</a></span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="text-center col-md-4 col-12">
+                            <div class="app-box">
+                                <img src="http://file1.casicloud.com/e1a34773479c47d39fff2e950ff53039.jpg" alt="">
+                                <p class="app-title" title="信息技术保障服务">信息技术保障服务</p>
+                                <p class="app-info" title="帮助企业解决复工后各类网络、服务器、数据库、数据备份等故障及技术问题，为企业正常生产保驾护航。">
+                                    帮助企业解决复工后各类网络、服务器、数据库、数据备份等故障及技术问题，为企业正常生产保驾护航。
+                                </p>
+                                <p class="app-price">疫情期间免费服务</p>
+                                <span class="app-buy"><a href="javascript: void(0)"
+                                        class="alert-tel-btn1">立即咨询</a></span>
+                            </div>
+
+
+                        </div>
+
+
+
+                        <div class="text-center col-md-4 col-12">
+                            <div class="app-box">
+                                <img src="http://file1.casicloud.com/e1a34773479c47d39fff2e950ff53039.jpg" alt="">
+                                <p class="app-title" title="企业上云服务">企业上云服务</p>
+                                <p class="app-info" title="帮助企业关键设备、产线、管理工具、业务上云，解决企业设备管理、远程监控、业务管理的困难，有效提升企业生产管理能力。">
+                                    帮助企业关键设备、产线、管理工具、业务上云，解决企业设备管理、远程监控、业务管理的困难，有效提升企业生产管理能力。
+                                </p>
+                                <p class="app-price">疫情期间免费服务</p>
+                                <span class="app-buy"><a href="javascript: void(0)"
+                                        class="alert-tel-btn">立即咨询</a></span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid app-container pt-2 px-0">
+                    <div class="row">
+                        <div class="text-center col-md-4 col-12">
+                            <div class="app-box">
+                                <img src="http://file1.casicloud.com/e1a34773479c47d39fff2e950ff53039.jpg" alt="">
+                                <p class="app-title" title="云CRM">云CRM</p>
+                                <p class="app-info" title="1. 使管理层对销售的整体现状有详细了解
+    2. 能对销售情况做出预测，使管理层能快速地对企业资源做出调整
+    3. 能有效地控制和保护企业的客户资源
+    4. 能提高企业的运作效率，增加企业的销售额和利润
+    5. 软件直观、简单，易于掌握和使用
+    
+    主要功能包括：
+     线索管理 
+     客户管理 
+     联系人管理
+     业务机会管理
+     销售预测 
+     个案管理 
+     解决方案管理
+     各种业务数据报告
+     用户权限管理
+    ">
+                                    1. 使管理层对销售的整体现状有详细了解
+                                    2. 能对销售情况做出预测，使管理层能快速地对企业资源做出调整
+                                    3. 能有效地控制和保护企业的客户资源
+                                    4. 能提高企业的运作效率，增加企业的销售额和利润
+                                    5. 软件直观、简单，易于掌握和使用
+
+                                    主要功能包括：
+                                     线索管理
+                                     客户管理
+                                     联系人管理
+                                     业务机会管理
+                                     销售预测
+                                     个案管理
+                                     解决方案管理
+                                     各种业务数据报告
+                                     用户权限管理
+
+                                </p>
+                                <p class="app-price">疫情期间免费使用</p>
+                                <span class="app-buy"><a href="./jinxiaoyuncrm.html" target="_blank">立即使用</a></span>
+                            </div>
+
+
+                        </div>
+                        <div class="text-center col-md-4 col-12">
+                            <div class="app-box">
+                                <img src="http://file1.casicloud.com/e1a34773479c47d39fff2e950ff53039.jpg" alt="">
+                                <p class="app-title" title="智能云仓">智能云仓</p>
+                                <p class="app-info" title="智能云仓支持手机APP、平板、电脑数据共享
+                                随时出入库，移动办公
+
+">
+                                    智能云仓支持手机APP、平板、电脑数据共享
+                                    随时出入库，移动办公
+
+                                </p><br>
+                                <p class="app-price">疫情期间免费使用</p>
+                                <span class="app-buy"><a href="./zhinengyuncang.html" target="_blank">立即使用</a></span>
+                            </div>
+
+
+
+                        </div>
+                        <div class="text-center col-md-4 col-12">
+                            <div class="app-box">
+                                <img src="http://file1.casicloud.com/e1a34773479c47d39fff2e950ff53039.jpg" alt="">
+                                <p class="app-title" title="云PLM">云PLM</p>
+                                <p class="app-info"
+                                    title="武汉开目PLM产品解决方案——Inforcenter平台面向制造业产品全生命周期业务过程，覆盖研发、工 艺、制造、检验与维修服务等阶段，提供构件化灵活可配置的平台，实现产品数据、过程及知识的一体化管 控。结合不同的研发过程横式，支持产品从需求规划、概念设计到维修维护等阶段的产品创新数字化过程。">
+                                    武汉开目PLM产品解决方案——Inforcenter平台面向制造业产品全生命周期业务过程，覆盖研发、工
+                                    艺、制造、检验与维修服务等阶段，提供构件化灵活可配置的平台，实现产品数据、过程及知识的一体化管
+                                    控。结合不同的研发过程横式，支持产品从需求规划、概念设计到维修维护等阶段的产品创新数字化过程。</p>
+                                <p class="app-price">价格优惠</p>
+                                <span class="app-buy"><a href="./htywpml.html" target="_blank">立即使用</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <a href="./appList.html">
+                    <div class="app-more">查看更多APP</div>
+                </a>
+
+
+
+            </div>
+        </div>
+
+        <div class="module-container floor" style="background-color: #f5f5f5;">
+            <div class="module-content">
+
+                <div class="module-title">
+                    <h3>疫情管理</h3>
+                    <p>用技术的力量助力抗击疫情</p>
+                </div>
+                <!-- <div class="module-title">
+                    <h3>政府物资调度平台</h3>
+                    <p>做好省、市医药物资数据汇总统计技术支持工作</p>
+                </div>
+                <div class="main-title1">
+                    <div class="left">
+                        省市医药物资保障统计平台
+                    </div>
+                    <div class="right">
+                        <a href="http://58.216.47.105:18088/fyksh/" style="font-size: 16px">进入平台>></a>
+                    </div>
+                </div> -->
+
+                <div class="content-main">
+
+                    <div class="main-article">
+                        <div class="container-fluid">
+                            <div class="row cards">
+                                <div class="col-md-4 text-center px-0">
+                                    <div class="cards-bg"></div>
+                                    <span class="zi zi_house cards-icon"></span>
+                                    <p>政府医药物资调度平台</p>
+                                    <div class="info">系统主要用于收集、统计、分析、监控、调度各类物资的产能、产量、库存以及运输等情况，目前该平台正用于某省政府物资调度。
+                                    </div>
+                                    <a href="./fywzkshdpddxt.html" target="_blank" class="cards-btn">防疫物资可视化大屏调度系统</a>
+                                    <a href="./fangyiwuziguanlixitong.html" target="_blank"
+                                        class="cards-btn cards-btn2">防疫物资管理系统</a>
+                                    <a href="./yidongduan.html" target="_blank" class="cards-btn cards-btn3">移动端</a>
+                                </div>
+                                <div class="col-md-4 text-center px-0">
+                                    <div class="cards-bg"></div>
+                                    <span class="zi zi_thermometer cards-icon"></span>
+                                    <p>AI体温精准筛查系统</p>
+                                    <div class="info">采用热成像技术、人脸识别物联网、云计算大数据、人工智能技术实现区域疫情体温、异常行为、遗失物、突发火情监测管理。
+                                    </div>
+                                    <a href="./wujiechucewenxitong.html" target="_blank" class="cards-btn">无接触测温系统</a>
+                                    <a href="./renlianshibiecewenzhongduan.html" target="_blank"
+                                        class="cards-btn cards-btn2">人脸识别测温终端</a>
+
+                                </div>
+                                <div class="col-md-4 text-center px-0">
+                                    <div class="cards-bg"></div>
+
+                                    <span class="zi zi_govAqsw cards-icon"></span>
+                                    <p>新型冠病毒快速诊断试剂盒</p>
+                                    <div class="info">新型冠状病毒最新快速筛查技术-POCT快速诊断试剂盒
+                                    </div>
+                                    <a href="./xxgzbdkszdsjh.html" target="_blank" class="cards-btn">查看详情</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- <div class="img-text">
+                            <div class="img1">
+                                <img src="./img/pingtai2.png" alt="" class="img-pc">
+                                <img src="./img/pingtai2.png" alt="" class="img-m">
+                            </div>
+
+                            <div class="text1">
+                                <p>
+                                    &emsp;&emsp;系统主要用于收集、统计、分析、监控、调度各类物资的产能、产量、库存以及运输等情况，目前该平台正用于某省政府物资调度。
+                                </p>
+                                <p>&emsp;&emsp;防疫物资可视化大屏调度系统：分为单日物资和累计物资，单日物资可实时查看当日省内各种物资总生产量、库存量、及所有物资从社会渠道和医疗机构筹集和消耗的数据及明细；累积物资可查看自定义时间段内的生产产量、社会渠道筹集量、医疗机构量等总数据，同时还有这段时间内的趋势判断。
+                                </p>
+                                <p>
+                                    &emsp;&emsp;防疫物资管理系统：可以从社会渠道、医疗机构、消杀产品、医药产品、防护产品等不同维度和渠道分时间段管理对应数据，实现数字信息化。
+                                </p>
+                                <p>
+                                    &emsp;&emsp;移动端：可通过移动端设备随时了解全省、市医药物资的供应及库存情况，为省、市决策省内物资调度提供依据。
+                                </p>
+                                <p class="">
+                                    <span>账号:admin</span>&emsp;&emsp;&emsp;&emsp;
+                                    <span>密码:123456ok</span>
+                                </p>
+
+                            </div>
+                        </div> -->
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="module-container floor need">
+            <div class="module-content">
+
+                <div class="module-title">
+                    <h3>人员流动轨迹查询</h3>
+                    <p>通过电信、移动、联通三大运营商查询人员近期流动轨迹!</p>
+                </div>
+
+                <div class="container main-article query">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-3">
+                            <p>中国移动</p>
+                            <img src="./img/zgyd.png" width="40%" alt="">
+                        </div>
+                        <div class="col-3">
+                            <p>中国电信</p>
+                            <img src="./img/zgdx.png" width="40%" alt="">
+                        </div>
+                        <div class="col-3">
+                            <p>中国联通</p>
+                            <img src="./img/zglt.png" width="40%" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card-box">
+                    <div class="card">
+                        <div class="card-title">
+                            湖南航天医院紧急医疗物资采购
+                        </div>
+                        <ul>
+                            <li>N95口罩1000个</li>
+                            <li>医用外科口罩5000个</li>
+                            <li>医用防护服200个</li>
+                            <li></li>
+                        </ul>
+                        <div class="btns">
+                            <a spm="activity_events_yiqing.hunan_supply"
+                                href="http://www.casicloud.com/buy/wg/contactInfo/40000027192079.html" target="_blank"
+                                class="">我要供货</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            沈阳航天医院紧急医疗物资采购
+                        </div>
+                        <ul class="big">
+                            <li>一次性手术衣（大号）1000个</li>
+                            <li>一次性医用外科口罩2000个</li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <div class="btns">
+                            <a spm="activity_events_yiqing.shenyang_supply"
+                                href="http://www.casicloud.com/buy/wg/contactInfo/40000027192101.html" target="_blank"
+                                class="">我要供货</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            七三一医院紧急医疗物资采购
+                        </div>
+                        <ul>
+                            <li>N95口罩2000个</li>
+                            <li>医用隔离衣1000个</li>
+                            <li>医用防护服1000个</li>
+                            <li>医用免洗手消500个</li>
+                        </ul>
+                        <div class="btns">
+                            <a spm="activity_events_yiqing.731_supply"
+                                href="http://www.casicloud.com/buy/wg/contactInfo/40000027192106.html" target="_blank"
+                                class="">我要供货</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            南京航天医院紧急医疗物资采购
+                        </div>
+                        <ul class="big">
+                            <li>医用外科口罩10000个</li>
+                            <li>一次性医用普通口罩6000个</li>
+                            <li>500ml消毒洗手液100瓶</li>
+                            <li></li>
+                        </ul>
+                        <div class="btns">
+                            <a spm="activity_events_yiqing.nanjing_supply"
+                                href="http://www.casicloud.com/buy/wg/contactInfo/40000027192090.html" target="_blank"
+                                class="">我要供货</a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+
+        <div class="module-container banner" style="margin: 0 auto;text-align: center;">
+            <a spm="activity_events_yiqing.fangyiCasicloudCom" href="http://fangyi.casicloud.com/" target="_blank">
+                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/fywzbanner1-pc.jpg" alt=""
+                    class="img-pc">
+                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/fywzbanner1-m.png" alt=""
+                    class="img-m">
+
+            </a>
+
+        </div>
+
+
+
+
+        <div class="module-container floor tongji">
+            <div class="module-content">
+
+                <div class="module-title">
+                    <h3>疫情信息</h3>
+                    <p>中国加油！武汉加油！实时了解战“疫”新动态!</p>
+                </div>
+
+
+
+                <div class="content-main">
+
+                    <div class="main-title1">
+                        <div class="left">
+                            全国疫情状况
+                            <span class="desc">
+
+                                截止<span id="time"></span>
+                            </span>
+                        </div>
+                        <div class="right">
+                            <a spm="activity_events_yiqing.yiqingMap"
+                                href="https://ncov.dxy.cn/ncovh5/view/pneumonia_peopleapp" target="_blank"
+                                style="font-size: 16px">查看疫情地图 >></a>
+                        </div>
+                    </div>
+
+                    <div class="status-box">
+                        <div class="one">
+                            <dl>
+                                <dt class="diagnosed">70639</dt>
+                                <dd>确诊人数</dd>
+                                <dd>昨日 +<span class="addNumber diagnosedIncr">2055</span></dd>
+                            </dl>
+                        </div>
+                        <div class="two">
+                            <dl>
+                                <dt class="suspect">7266</dt>
+                                <dd>疑似病例</dd>
+                                <dd>昨日 +<span class="addNumber suspectIncr">1563</span></dd>
+                            </dl>
+                        </div>
+                        <div class="three">
+                            <dl>
+                                <dt class="death">1772</dt>
+                                <dd>死亡人数</dd>
+                                <dd>昨日 +<span class="addNumber deathIncr">106</span></dd>
+                            </dl>
+                        </div>
+                        <div class="four">
+                            <dl>
+                                <dt class="cured">11049</dt>
+                                <dd>治愈人数</dd>
+                                <dd>昨日 +<span class="addNumber curedIncr">1624</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="feature-box">
+                        <a spm="activity_events_yiqing.search_jiechuzhe" href="https://2019ncov.cetccloud.com/"
+                            target="_blank">
+                            <div class="img">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/jcz-pc.png" alt=""
+                                    class="img-pc">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/jcz-m.png" alt=""
+                                    class="img-m">
+                            </div>
+                            <div>
+                                密切接触者查询
+                            </div>
+                        </a>
+                        <a spm="activity_events_yiqing.search_zhoubian"
+                            href="https://z.cbndata.com/2019-nCoV/index.html?from=timeline&isappinstalled=0"
+                            target="_blank">
+                            <div class="img">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/zbyq-pc.png" alt=""
+                                    class="img-pc">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/zbyq-m.png" alt=""
+                                    class="img-m">
+                            </div>
+                            <div>
+                                周边疫情
+                            </div>
+                        </a>
+                        <a spm="activity_events_yiqing.search_tongcheng"
+                            href="https://2019ncov.133.cn/virus-trip/Vue/virusTrip/home?ptid=dxys" target="_blank">
+                            <div class="img">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/hzcx-pc.png" alt=""
+                                    class="img-pc">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/hzcx-m.png" alt=""
+                                    class="img-m">
+                            </div>
+                            <div>
+                                患者同乘查询
+                            </div>
+                        </a>
+                        <a spm="activity_events_yiqing.search_piyao"
+                            href="https://ncov.dxy.cn/ncovh5/view/pneumonia_rumors?from=peopleapp&source=undefined"
+                            target="_blank">
+                            <div class="img">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/jzpy-pc.png" alt=""
+                                    class="img-pc">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/jzpy-m.png" alt=""
+                                    class="img-m">
+                            </div>
+                            <div>
+                                鉴真辟谣
+                            </div>
+                        </a>
+                        <a spm="activity_events_yiqing.search_menzhen"
+                            href="https://assets.dxycdn.com/gitrepo/tod-assets/output/default/pneumonia/index.htm"
+                            target="_blank">
+                            <div class="img">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/frmz-pc.png" alt=""
+                                    class="img-pc">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/frmz-m.png" alt=""
+                                    class="img-m">
+                            </div>
+                            <div>
+                                全国发热门诊
+                            </div>
+                        </a>
+                        <a spm="activity_events_yiqing.search_fanghu"
+                            href="https://ncov.dxy.cn/ncovh5/view/pneumonia_recommends?from=peopleapp" target="_blank">
+                            <div class="img">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/fhzs-pc.png" alt=""
+                                    class="img-pc">
+                                <img src="https://cdn.htres.cn/res_v2/images/activity_events/yiqing/fhzs-m.png" alt=""
+                                    class="img-m">
+                            </div>
+                            <div>
+                                肺炎防护知识
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- <div class="footer1">
+                        <div>疫情期间，航天云网客服为您提供咨询服务，请拨打： </div>
+                        <span>400-615-1188</span><br>
+                        <span>13611368555</span><br>
+                        全力以赴，万众一心,<br>
+                        一起打赢这场疫情防控阻击战!<br>
+                    </div> -->
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="alert-tel">
+            <div class="alert-tel-box">
+                <p class="alert-tel-title">详情请联系</p>
+                <div class="alert-tel-people">
+                    <div>
+                        <p>韩部长</p>
+                        <p>市场运营部负责人</p>
+                        <p>电话: 18752169776</p>
+                    </div>
+                    <div>
+                        <p>赵总监</p>
+                        <p>市场运营部副总监</p>
+                        <p>电话: 18661110880</p>
+                    </div>
+                </div>
+                <span class="alert-tel-box-true">确 定</span>
+            </div>
+        </div>
+        <div class="alert-tel1">
+            <div class="alert-tel-box">
+                <p class="alert-tel-title">详情请联系</p>
+                <div class="alert-tel-people">
+
+                    <div>
+                        <p>周总监</p>
+                        <p>工业大数据应用技术部副总监</p>
+                        <p>电话: 13861057259</p>
+                    </div>
+                </div>
+                <span class="alert-tel-box-true1">确 定</span>
+            </div>
+        </div>
+        <div class="footer">
+            <span id="pv"></span>
+
+            <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
+                src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px"
+                style="margin-top: 50px;vertical-align: bottom"></iframe>
+        </div>
+    </div>
+
+
+    <div style="display:none;">
+        <script src="https://s95.cnzz.com/z_stat.php?id=1260923910&web_id=1260923910" language="JavaScript"></script>
+    </div>
+    <script type="text/javascript" src="https://stat.htres.cn/v1/log.js?ds=h5&appid=670"></script>
+
+    <script>
+        $(function () {
+            function setFixedNav() {
+                var fixedNavH = $(".fixed-nav").outerHeight();
+                var fixedTop = $(".fixed-nav").offset().top;
+                // console.log(fixedNavH)
+                // console.log(fixedTop);
+
+                function setFixed() {
+                    $(".fixed-nav").css({
+                        "position": "fixed",
+                        "top": "0",
+                        "left": "0",
+                        "right": "0",
+                        "z-index": "10000",
+                    });
+                    $("#placeholderBox").css({
+                        "height": fixedNavH + "px",
+                    });
+                }
+
+                function setStatic() {
+                    $(".fixed-nav").css({
+                        "position": "static",
+                    });
+                    $("#placeholderBox").css({
+                        "height": 0 + "px",
+                    });
+                }
+
+                function setScroll() {
+                    var Top = $(window).scrollTop();
+                    $(".floor").each(function (i) {
+                        if (Top >= $(this).offset().top - fixedNavH - 5) {
+                            $("#fixedNav ul li").eq(i).addClass("active").siblings().removeClass(
+                                "active");
+                        }
+                    });
+
+                    if (Top >= fixedTop) {
+                        setFixed();
+                    } else {
+                        setStatic();
+                    }
+                }
+
+                $("#fixedNav ul li").click(function () {
+                    var index = $(this).index();
+                    var _top = $(".floor").eq(index).offset().top;
+                    $("html,body").animate({
+                        "scrollTop": _top - fixedNavH
+                    }, 100);
+                    setFixed();
+
+                    setTimeout(function () {
+                        $("#fixedNav ul li").eq(index).addClass("active").siblings()
+                            .removeClass("active")
+                    }, 200);
+                });
+                $(window).scroll(function () {
+                    setScroll();
+                });
+
+                setScroll();
+            }
+
+            function getTime() {
+
+                Date.prototype.format = function (format) {
+                    var date = {
+                        "M+": this.getMonth() + 1,
+                        "d+": this.getDate(),
+                        "h+": this.getHours(),
+                        "m+": this.getMinutes(),
+                        "s+": this.getSeconds(),
+                        "q+": Math.floor((this.getMonth() + 3) / 3),
+                        "S+": this.getMilliseconds()
+                    };
+                    if (/(y+)/i.test(format)) {
+                        format = format.replace(RegExp.$1, (this.getFullYear() + '').substr(4 - RegExp.$1
+                            .length));
+                    }
+                    for (var k in date) {
+                        if (new RegExp("(" + k + ")").test(format)) {
+                            format = format.replace(RegExp.$1, RegExp.$1.length == 1 ?
+                                date[k] : ("00" + date[k]).substr(("" + date[k]).length));
+                        }
+                    }
+                    return format;
+                }
+                var time = new Date().format('yyyy-MM-dd hh:mm:ss');
+                // console.log(time)
+                $("#time").text(time);
+            }
+
+
+
+
+            setFixedNav();
+            getTime();
+
+
+
+            $(".addNumber").each(function () {
+                if ($(this).text().trim() === "") {
+                    $(this).parent().css({
+                        "visibility": "hidden",
+                    });
+                }
+            });
+
+
+        });
+    </script>
+    <script src="./js/index.js"></script>
+
+    <script type="text/javascript">
+        var caution = false
+
+        function setCookie(name, value, expires, path, domain, secure) {
+            var curCookie = name + "=" + escape(value) +
+                ((expires) ? ";expires=" + expires.toGMTString() : "") +
+                ((path) ? "; path=" + path : "") +
+                ((domain) ? "; domain=" + domain : "") +
+                ((secure) ? ";secure" : "")
+            if (!caution || (name + "=" + escape(value)).length <= 4000) {
+                document.cookie = curCookie
+            } else if (confirm("Cookie exceeds 4KB and will be cut!")) {
+                document.cookie = curCookie
+            }
+        }
+
+        function getCookie(name) {
+            var prefix = name + "="
+            var cookieStartIndex = document.cookie.indexOf(prefix)
+            if (cookieStartIndex == -1) {
+                return null
+            }
+            var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+            if (cookieEndIndex == -1) {
+                cookieEndIndex = document.cookie.length
+            }
+            return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+        }
+
+        function deleteCookie(name, path, domain) {
+            if (getCookie(name)) {
+                document.cookie = name + "=" +
+                    ((path) ? "; path=" + path : "") +
+                    ((domain) ? "; domain=" + domain : "") +
+                    "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+            }
+        }
+
+        function fixDate(date) {
+            var base = new Date(0)
+            var skew = base.getTime()
+            if (skew > 0) {
+                date.setTime(date.getTime() - skew)
+            }
+        }
+        var now = new Date()
+        fixDate(now)
+        now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+        var visits = getCookie("counter")
+        // if (!visits) {
+        //     visits = 1;
+        // } else {
+        visits = parseInt(visits) + 1;
+        // }
+        setCookie("counter", visits, now)
+        $('#pv').text("您是到访的第" + (1480 + visits) + "位用户！")
+        // document.write("您是到访的第"+ 1016 + visits + "位用户！")
+    </script>
+</body>
+
+</html>

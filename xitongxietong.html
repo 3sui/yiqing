@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>息通协同</title>
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="https://cdn.htres.cn/res_v2/scenes/assets/js/swiper.jquery.min.js"></script> -->
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="container">
+            <div class="title">
+                <h4>息通协同<span><a href="http://changzhou.casicloud.com/view">常州工业物联大数据平台</a></span></h4>
+            </div>
+            <div class="content">
+                <div>
+                    <h5 class="content-title">息通协同</h5>
+                    <div class="content-info"
+                        title="息通协同是一款远程协同办公APP，使用者只需从各大手机厂商的应用市场中下载，即可使用，抓住了远程协同办公的核心需求，加强了对文档的讨论与协同操作。无论从用户体验方面还是实用性方面，都是对现有的远程办公软件的一次超越。为远程办公提供了新的视角和新的思路，特别是对目前的新冠病毒肆虐的环境下，给在家办公提供了强有力的支持。">
+                        息通协同是一款远程协同办公APP，使用者只需从各大手机厂商的应用市场中下载，即可使用，抓住了远程协同办公的核心需求，加强了对文档的讨论与协同操作。无论从用户体验方面还是实用性方面，都是对现有的远程办公软件的一次超越。为远程办公提供了新的视角和新的思路，特别是对目前的新冠病毒肆虐的环境下，给在家办公提供了强有力的支持。
+                    </div>
+                    <!-- <p>测试账号: 123456789</p> -->
+                    <p style="color: #fff;">测试账号: 15311435640</p>
+                    <p style="color: #fff;">测试密码: 123456</p>
+                    <a href="http://meeting.svc.htres.cn">使用平台</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center fixed-nav navbar">
+        <div id="fixedNav" class="container d-flex align-items-center">
+            <ul class="container-fluid d-flex justify-content-around">
+                <li class="active">获得荣耀</li>
+                <li>产品特色</li>
+                <li>应用场景</li>
+                <li>产品界面</li>
+            </ul>
+        </div>
+    </div>
+    <div id="placeholderBox"></div>
+
+    <div class="container plate floor">
+        <p class="introduction">获得荣耀</p>
+
+        <p>息通协同 ● 让协作随身</p>
+        <p>----极简智能协作电话</p>
+        <p>2018年获得中国区块链创新应用大赛二等奖；</p>
+        <p>2019年获得中国贵阳国际数博会APP创新大赛三等奖。</p>
+
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">产品特色</p>
+
+        <p>口袋会议、随时协作：随时随地协作，工作效率倍增；</p>
+        <p>无需硬件、高性价比：手机、PAD均支持，高清语音、视频协作即时用；</p>
+        <p>多人连麦、沟通无碍：多人语音连麦，毫秒级延迟；</p>
+        <p>多人标注、协作无缝：多人同时标注，让沟通更无缝；</p>
+        <p>多屏互动 ：支持与各类大屏同步互动；</p>
+        <p>协作全记录、细节随时看：协作过程自动存，重要事项随时看。</p>
+
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">应用场景</p>
+
+        <p>公司会议、远程医疗、在线教育、户外施工、装修装饰、远程救援，以及法律、保险、电商、金融等行业均适用。</p>
+
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">产品界面</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/xitongxietong1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-flued">
+        <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
+            src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px"
+            style="margin-top: 50px;vertical-align: bottom"></iframe>
+    </div>
+    <script>
+        $(function () {
+            // console.log(1);
+            setFixedNav();
+
+            function setFixedNav() {
+                var fixedNavH = $(".fixed-nav").outerHeight();
+                var fixedTop = $(".fixed-nav").offset().top;
+                console.log(fixedNavH)
+                console.log(fixedTop);
+
+                function setFixed() {
+                    $(".fixed-nav").css({
+                        "position": "fixed",
+                        "top": "0",
+                        "left": "0",
+                        "right": "0",
+                        "z-index": "10000",
+                    });
+                    $("#placeholderBox").css({
+                        "height": fixedNavH + "px",
+                    });
+                }
+
+                function setStatic() {
+                    $(".fixed-nav").css({
+                        "position": "static",
+                    });
+                    $("#placeholderBox").css({
+                        "height": 0 + "px",
+                    });
+                }
+
+                function setScroll() {
+                    var Top = $(window).scrollTop();
+                    $(".floor").each(function (i) {
+                        if (Top >= $(this).offset().top - fixedNavH - 5) {
+                            $("#fixedNav ul li").eq(i).addClass("active").siblings().removeClass(
+                                "active");
+                        }
+                    });
+
+                    if (Top >= fixedTop) {
+                        setFixed();
+                    } else {
+                        setStatic();
+                    }
+                }
+
+                $("#fixedNav ul li").click(function () {
+                    console.log(1)
+                    var index = $(this).index();
+                    var _top = $(".floor").eq(index).offset().top;
+                    $("html,body").animate({
+                        "scrollTop": _top - fixedNavH
+                    }, 100);
+                    setFixed();
+
+                    setTimeout(function () {
+                        $("#fixedNav ul li").eq(index).addClass("active").siblings()
+                            .removeClass("active")
+                    }, 200);
+                });
+                $(window).scroll(function () {
+                    setScroll();
+                });
+
+                setScroll();
+            }
+        })
+    </script>
+</body>
+
+</html>

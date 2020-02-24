@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>云PLM</title>
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="https://cdn.htres.cn/res_v2/scenes/assets/js/swiper.jquery.min.js"></script> -->
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="container">
+            <div class="title">
+                <h4>云PLM<span><a href="http://changzhou.casicloud.com/view">常州工业物联大数据平台</a></span></h4>
+            </div>
+            <div class="content">
+                <div>
+                    <h5 class="content-title">云PLM</h5>
+                    <div class="content-info"
+                        title="云PLM是新一代PLM系统，是制造信息化解决方案的的管理核心平台。该平台可作为企业研发、工艺、服务、制造管理系统的公共基础，为这些系统提供所需的各项平台功能。">
+                        云PLM是新一代PLM系统，是制造信息化解决方案的的管理核心平台。该平台可作为企业研发、工艺、服务、制造管理系统的公共基础，为这些系统提供所需的各项平台功能。</div>
+                    <p>测试账号: da</p>
+                    <p style="color: #fff;">测试密码: 123</p>
+                    <a href="http://kmcloud.svc.casicloud.com/kmwp_server/">使用平台</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center fixed-nav navbar">
+        <div id="fixedNav" class="container d-flex align-items-center">
+            <ul class="container-fluid d-flex justify-content-around">
+                <li class="active">概述</li>
+                <li>技术构架</li>
+                <li>技术特色</li>
+                <li>我的桌面</li>
+                <li>图文档管理&零部件管理&工作流程管理&产品结构管理</li>
+            </ul>
+        </div>
+    </div>
+    <div id="placeholderBox"></div>
+
+
+    <div class="container plate floor">
+        <p class="introduction">概述</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/htywpml1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">技术架构</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/htywpml2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">技术特色</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/htywpml3.png" alt="">
+                <img src="./img/htywpml4.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">我的桌面</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/htywpml5.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">图文档管理&零部件管理&工作流程管理&产品结构管理</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/htywpml6.png" alt="">
+                <img src="./img/htywpml7.png" alt="">
+                <img src="./img/htywpml8.png" alt="">
+                <img src="./img/htywpml9.png" alt="">
+                <img src="./img/htywpml10.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-flued">
+        <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
+            src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px"
+            style="margin-top: 50px;vertical-align: bottom"></iframe>
+    </div>
+    <script>
+        $(function () {
+            // console.log(1);
+            setFixedNav();
+
+            function setFixedNav() {
+                var fixedNavH = $(".fixed-nav").outerHeight();
+                var fixedTop = $(".fixed-nav").offset().top;
+                console.log(fixedNavH)
+                console.log(fixedTop);
+
+                function setFixed() {
+                    $(".fixed-nav").css({
+                        "position": "fixed",
+                        "top": "0",
+                        "left": "0",
+                        "right": "0",
+                        "z-index": "10000",
+                    });
+                    $("#placeholderBox").css({
+                        "height": fixedNavH + "px",
+                    });
+                }
+
+                function setStatic() {
+                    $(".fixed-nav").css({
+                        "position": "static",
+                    });
+                    $("#placeholderBox").css({
+                        "height": 0 + "px",
+                    });
+                }
+
+                function setScroll() {
+                    var Top = $(window).scrollTop();
+                    $(".floor").each(function (i) {
+                        if (Top >= $(this).offset().top - fixedNavH - 5) {
+                            $("#fixedNav ul li").eq(i).addClass("active").siblings().removeClass(
+                                "active");
+                        }
+                    });
+
+                    if (Top >= fixedTop) {
+                        setFixed();
+                    } else {
+                        setStatic();
+                    }
+                }
+
+                $("#fixedNav ul li").click(function () {
+                    console.log(1)
+                    var index = $(this).index();
+                    var _top = $(".floor").eq(index).offset().top;
+                    $("html,body").animate({
+                        "scrollTop": _top - fixedNavH
+                    }, 100);
+                    setFixed();
+
+                    setTimeout(function () {
+                        $("#fixedNav ul li").eq(index).addClass("active").siblings()
+                            .removeClass("active")
+                    }, 200);
+                });
+                $(window).scroll(function () {
+                    setScroll();
+                });
+
+                setScroll();
+            }
+        })
+    </script>
+</body>
+
+</html>
