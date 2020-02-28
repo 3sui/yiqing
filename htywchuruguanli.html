@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>航天云网企业出入管理系统</title>
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="https://cdn.htres.cn/res_v2/scenes/assets/js/swiper.jquery.min.js"></script> -->
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="container">
+            <div class="title">
+                <h4>航天云网企业出入管理系统<span><a href="http://changzhou.casicloud.com/view">常州工业物联大数据平台</a></span></h4>
+            </div>
+            <div class="content">
+                <div>
+                    <h5 class="content-title">航天云网企业出入管理系统</h5>
+                    <div class="content-info" title="航天云网企业出入管理系统功能包含企业信息登记，员工信息填报，员工信息审核，通行证领取的功能。">
+                        航天云网企业出入管理系统功能包含企业信息登记，员工信息填报，员工信息审核，通行证领取的功能。</div>
+                    <!-- <p>测试账号: 123456789</p> -->
+                    <!-- <p style="color: #fff;">测试密码: xloong</p> -->
+                    <a href="http://m.htyw.ankaaiot.com:81/public/">使用平台</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center fixed-nav navbar">
+        <div id="fixedNav" class="container d-flex align-items-center">
+            <ul class="container-fluid d-flex justify-content-around">
+                <li class="active">使用说明</li>
+            </ul>
+        </div>
+    </div>
+    <div id="placeholderBox"></div>
+
+    <div class="container plate floor">
+        <p class="introduction">使用说明</p>
+
+        <p>1. 企业信息登记：</p>
+        <p>由企业管理者使用，登记企业相关信息，每个企业只可登记一次。企业登记成功后，会生成企业二维码，请妥善保存。</p>
+        <p>2. 员工信息填报：</p>
+        <p>由员工使用。员工可扫企业二维码填报信息。</p>
+        <p>3. 员工信息审核：</p>
+        <p>由企业管理者使用，对本企业员工填报的信息进行审核。员工信息审核通过后才可领取通行证。</p>
+        <p>4. 通行证领取：</p>
+        <p>由员工使用。企业审核通过后，员工可领取通行证。</p>
+        <p>5. 邮件资讯：</p>
+        <p>系统使用过程中，如有问题或需要咨询，请发邮件至：support@imichi.cn。邮件中请描述问题，并留下企业名称、联系人姓名及手机号。</p>
+        <p>6. 邮件回复时间：</p>
+        <p>9:00-18:00。工作人员将2小时内与您沟通；周末回复时间在2-4小时内。</p>
+
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">产品界面</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/htywchuruguanli1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-flued">
+        <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px" style="margin-top: 50px;vertical-align: bottom"></iframe>
+    </div>
+    <script>
+        $(function() {
+            // console.log(1);
+            setFixedNav();
+
+            function setFixedNav() {
+                var fixedNavH = $(".fixed-nav").outerHeight();
+                var fixedTop = $(".fixed-nav").offset().top;
+                console.log(fixedNavH)
+                console.log(fixedTop);
+
+                function setFixed() {
+                    $(".fixed-nav").css({
+                        "position": "fixed",
+                        "top": "0",
+                        "left": "0",
+                        "right": "0",
+                        "z-index": "10000",
+                    });
+                    $("#placeholderBox").css({
+                        "height": fixedNavH + "px",
+                    });
+                }
+
+                function setStatic() {
+                    $(".fixed-nav").css({
+                        "position": "static",
+                    });
+                    $("#placeholderBox").css({
+                        "height": 0 + "px",
+                    });
+                }
+
+                function setScroll() {
+                    var Top = $(window).scrollTop();
+                    $(".floor").each(function(i) {
+                        if (Top >= $(this).offset().top - fixedNavH - 5) {
+                            $("#fixedNav ul li").eq(i).addClass("active").siblings().removeClass(
+                                "active");
+                        }
+                    });
+
+                    if (Top >= fixedTop) {
+                        setFixed();
+                    } else {
+                        setStatic();
+                    }
+                }
+
+                $("#fixedNav ul li").click(function() {
+                    console.log(1)
+                    var index = $(this).index();
+                    var _top = $(".floor").eq(index).offset().top;
+                    $("html,body").animate({
+                        "scrollTop": _top - fixedNavH
+                    }, 100);
+                    setFixed();
+
+                    setTimeout(function() {
+                        $("#fixedNav ul li").eq(index).addClass("active").siblings()
+                            .removeClass("active")
+                    }, 200);
+                });
+                $(window).scroll(function() {
+                    setScroll();
+                });
+
+                setScroll();
+            }
+        })
+    </script>
+</body>
+
+</html>

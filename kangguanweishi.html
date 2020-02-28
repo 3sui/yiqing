@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>抗冠卫士</title>
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="https://cdn.htres.cn/res_v2/scenes/assets/js/swiper.jquery.min.js"></script> -->
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="container">
+            <div class="title">
+                <h4>抗冠卫士<span><a href="http://changzhou.casicloud.com/view">常州工业物联大数据平台</a></span></h4>
+            </div>
+            <div class="content">
+                <div>
+                    <h5 class="content-title">抗冠卫士</h5>
+                    <div class="content-info" title="抗冠卫士帮助企业统计人员、物资以及环境等相关防疫信息，并提供复工复产之精益管理准备检查、防疫小贴士等服务，实现人员查询及追踪、物资统计及追溯、环境监控及报警等功能，助力企业全面掌握防疫进展，精准实施疫情防治，及时控制疫情扩散。">
+                        抗冠卫士帮助企业统计人员、物资以及环境等相关防疫信息，并提供复工复产之精益管理准备检查、防疫小贴士等服务，实现人员查询及追踪、物资统计及追溯、环境监控及报警等功能，助力企业全面掌握防疫进展，精准实施疫情防治，及时控制疫情扩散。
+                    </div>
+                    <!-- <p>测试账号: casicloud</p> -->
+                    <!-- <p style="color: #fff;">测试账号: casicloud</p>
+                    <p style="color: #fff;">测试密码: 123456</p> -->
+                    <!-- <a href="http://dekeyicai.svc.htres.cn/Index/nindex.html">使用平台</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center fixed-nav navbar">
+        <div id="fixedNav" class="container d-flex align-items-center">
+            <ul class="container-fluid d-flex justify-content-around">
+                <li class="active">员工返岗登记</li>
+                <li>外来人员登记</li>
+                <li>数据统计分析</li>
+                <li>使用产品</li>
+            </ul>
+        </div>
+    </div>
+    <div id="placeholderBox"></div>
+
+    <div class="container plate floor">
+        <p class="introduction">员工返岗登记</p>
+
+        <p>通过问卷式的防疫信息填写，快速登记员工健康与行程信息。基于员工信息，后台管理人员可实时追溯员工行动轨迹，实现企业防疫信息透明化。</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/kangguanweishi2.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="container plate floor">
+        <p class="introduction">外来人员登记</p>
+
+        <p>通过问卷式外来人员疫情信息登记，快速采集其健康数据，通过实时的健康状态反馈与历史行程追溯，高效管理来访人员。</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/kangguanweishi3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container plate floor">
+        <p class="introduction">数据统计分析</p>
+
+        <p>人员疫情信息实时汇总展示，助力企业实时掌控返岗信息、人员健康状态等，防疫情况清晰在“握”。</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/kangguanweishi4.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">使用产品</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/kangguanweishi1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-flued">
+        <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px" style="margin-top: 50px;vertical-align: bottom"></iframe>
+    </div>
+    <script>
+        $(function() {
+            // console.log(1);
+            setFixedNav();
+
+            function setFixedNav() {
+                var fixedNavH = $(".fixed-nav").outerHeight();
+                var fixedTop = $(".fixed-nav").offset().top;
+                console.log(fixedNavH)
+                console.log(fixedTop);
+
+                function setFixed() {
+                    $(".fixed-nav").css({
+                        "position": "fixed",
+                        "top": "0",
+                        "left": "0",
+                        "right": "0",
+                        "z-index": "10000",
+                    });
+                    $("#placeholderBox").css({
+                        "height": fixedNavH + "px",
+                    });
+                }
+
+                function setStatic() {
+                    $(".fixed-nav").css({
+                        "position": "static",
+                    });
+                    $("#placeholderBox").css({
+                        "height": 0 + "px",
+                    });
+                }
+
+                function setScroll() {
+                    var Top = $(window).scrollTop();
+                    $(".floor").each(function(i) {
+                        if (Top >= $(this).offset().top - fixedNavH - 5) {
+                            $("#fixedNav ul li").eq(i).addClass("active").siblings().removeClass(
+                                "active");
+                        }
+                    });
+
+                    if (Top >= fixedTop) {
+                        setFixed();
+                    } else {
+                        setStatic();
+                    }
+                }
+
+                $("#fixedNav ul li").click(function() {
+                    console.log(1)
+                    var index = $(this).index();
+                    var _top = $(".floor").eq(index).offset().top;
+                    $("html,body").animate({
+                        "scrollTop": _top - fixedNavH
+                    }, 100);
+                    setFixed();
+
+                    setTimeout(function() {
+                        $("#fixedNav ul li").eq(index).addClass("active").siblings()
+                            .removeClass("active")
+                    }, 200);
+                });
+                $(window).scroll(function() {
+                    setScroll();
+                });
+
+                setScroll();
+            }
+        })
+    </script>
+</body>
+
+</html>

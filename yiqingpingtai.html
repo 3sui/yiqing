@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>疫情防控信息管理平台</title>
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="https://cdn.htres.cn/res_v2/scenes/assets/js/swiper.jquery.min.js"></script> -->
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="container">
+            <div class="title">
+                <h4>疫情防控信息管理平台<span><a href="http://changzhou.casicloud.com/view">常州工业物联大数据平台</a></span></h4>
+            </div>
+            <div class="content">
+                <div>
+                    <h5 class="content-title">疫情防控信息管理平台</h5>
+                    <div class="content-info" title="疫情防控信息管理平台针对大批生产制造型企业无法正常完成年后返工的现状，通过信息化系统，实现快速上报复工和疫情情况，完成政府复工上报要求，可以及时掌握企业上报的最新数据和辖区企业的汇总情况，根据数据合理地进行疫情防控。使用该平台，可以进行复工企业疫情防控信息上报和统计，防疫物资生产和复工人员疫情相关信息上报统计，以及发布和更新政府疫情防控规范和要求等重大信息。本平台从即日上线开始便免费向全社会提供，希望能在特殊时期，帮助各级政府和辖区企业之间、大型集团公司与各地分支机构之间，顺利完成疫情防控信息同步，共同携手跨越疫情带给我们的挑战。">
+                        疫情防控信息管理平台针对大批生产制造型企业无法正常完成年后返工的现状，通过信息化系统，实现快速上报复工和疫情情况，完成政府复工上报要求，可以及时掌握企业上报的最新数据和辖区企业的汇总情况，根据数据合理地进行疫情防控。使用该平台，可以进行复工企业疫情防控信息上报和统计，防疫物资生产和复工人员疫情相关信息上报统计，以及发布和更新政府疫情防控规范和要求等重大信息。本平台从即日上线开始便免费向全社会提供，希望能在特殊时期，帮助各级政府和辖区企业之间、大型集团公司与各地分支机构之间，顺利完成疫情防控信息同步，共同携手跨越疫情带给我们的挑战。</div>
+                    <!-- <p>测试账号: 15000000000</p> -->
+                    <p style="color: #fff;">测试密码: 15000000000</p>
+                    <p style="color: #fff;">测试密码: 12345678</p>
+                    <a href="http://demo.saimoyun.com">使用平台</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center fixed-nav navbar">
+        <div id="fixedNav" class="container-fluid d-flex align-items-center">
+            <ul class="container-fluid d-flex justify-content-around">
+                <li class="active">产品介绍</li>
+                <li>产品界面</li>
+            </ul>
+        </div>
+    </div>
+    <div id="placeholderBox"></div>
+
+    <div class="container plate floor">
+        <p class="introduction">产品介绍</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/yiqingpingtai2.png" alt="">
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/yiqingpingtai3.png" alt="">
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/yiqingpingtai4.png" alt="">
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/yiqingpingtai5.png" alt="">
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/yiqingpingtai6.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">产品界面</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/yiqingpingtai1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-flued">
+        <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px" style="margin-top: 50px;vertical-align: bottom"></iframe>
+    </div>
+    <script>
+        $(function() {
+            // console.log(1);
+            setFixedNav();
+
+            function setFixedNav() {
+                var fixedNavH = $(".fixed-nav").outerHeight();
+                var fixedTop = $(".fixed-nav").offset().top;
+                console.log(fixedNavH)
+                console.log(fixedTop);
+
+                function setFixed() {
+                    $(".fixed-nav").css({
+                        "position": "fixed",
+                        "top": "0",
+                        "left": "0",
+                        "right": "0",
+                        "z-index": "10000",
+                    });
+                    $("#placeholderBox").css({
+                        "height": fixedNavH + "px",
+                    });
+                }
+
+                function setStatic() {
+                    $(".fixed-nav").css({
+                        "position": "static",
+                    });
+                    $("#placeholderBox").css({
+                        "height": 0 + "px",
+                    });
+                }
+
+                function setScroll() {
+                    var Top = $(window).scrollTop();
+                    $(".floor").each(function(i) {
+                        if (Top >= $(this).offset().top - fixedNavH - 5) {
+                            $("#fixedNav ul li").eq(i).addClass("active").siblings().removeClass(
+                                "active");
+                        }
+                    });
+
+                    if (Top >= fixedTop) {
+                        setFixed();
+                    } else {
+                        setStatic();
+                    }
+                }
+
+                $("#fixedNav ul li").click(function() {
+                    console.log(1)
+                    var index = $(this).index();
+                    var _top = $(".floor").eq(index).offset().top;
+                    $("html,body").animate({
+                        "scrollTop": _top - fixedNavH
+                    }, 100);
+                    setFixed();
+
+                    setTimeout(function() {
+                        $("#fixedNav ul li").eq(index).addClass("active").siblings()
+                            .removeClass("active")
+                    }, 200);
+                });
+                $(window).scroll(function() {
+                    setScroll();
+                });
+
+                setScroll();
+            }
+        })
+    </script>
+</body>
+
+</html>
