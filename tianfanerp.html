@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>天帆ERP</title>
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="https://cdn.htres.cn/res_v2/scenes/assets/js/swiper.jquery.min.js"></script> -->
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="container">
+            <div class="title">
+                <h4>天帆ERP<span><a href="http://changzhou.casicloud.com/view">常州工业物联大数据平台</a></span></h4>
+            </div>
+            <div class="content">
+                <div>
+                    <h5 class="content-title">天帆ERP</h5>
+                    <div class="content-info" title="应用场景：企业信息管理，生产管理，资源管理。
+优势：功能模块齐全，整合资源，方便部署，易于使用。
+价值：全面管理企业各项数据，辅助决策。节省企业经营成本。">
+                        应用场景：企业信息管理，生产管理，资源管理。<br>
+                        优势：功能模块齐全，整合资源，方便部署，易于使用。<br>
+                        价值：全面管理企业各项数据，辅助决策。节省企业经营成本。
+                    </div>
+                    <!-- <p>测试账号: casicloud</p> -->
+                    <p style="color: #fff;">测试账号: user1</p>
+                    <p style="color: #fff;">测试密码: 123456</p>
+                    <a href="http://58.216.47.110:19002/Login/Login">使用平台</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center fixed-nav navbar">
+        <div id="fixedNav" class="container d-flex align-items-center">
+            <ul class="container-fluid d-flex justify-content-around">
+                <li class="active">企业介绍</li>
+                <li>生产制造</li>
+                <li>物流管理</li>
+                <li>质量追溯</li>
+                <li>工资管理</li>
+            </ul>
+        </div>
+    </div>
+    <div id="placeholderBox"></div>
+
+    <div class="container plate floor">
+        <p class="introduction">企业介绍</p>
+
+        <p>一家集产品研发、管理咨询、项目实施等一体化服务的企业管理软件和企业信息化解决方案服务提供商。天帆依据企业成长路线和多年的市场实践经验，提供完整的企业管理产品线组合，包含ERP企业资源管理系统、PDM/PLM产品生命周期管理系统、MES生产制造执行系统、BPM业务流程管理系统等，能够全面满足企业在不同发展阶段的各项管理需求。</p>
+        <p>公司的团队成员拥有十几年生产制造业管理经验，为数百家企业提供了优 秀的本地化服务，并在汽配行业，电机行业，电子行业，注塑行业，制造装备 业都有成功案件;是常州市两化融合服务合作单位，常州市信息化服务合作机 构，常州市企业信息化协会的理事单位和常州市智能制造推广联盟会员单位。</p>
+
+    </div>
+    <div class="container plate floor">
+        <p class="introduction">生产制造</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/tianfanerp1.png" alt="">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container plate floor">
+        <p class="introduction">物流管理</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/tianfanerp2.png" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">质量追溯</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/tianfanerp3.png" alt="">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container plate floor">
+        <p class="introduction">工资管理</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/tianfanerp4.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-flued">
+        <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px" style="margin-top: 50px;vertical-align: bottom"></iframe>
+    </div>
+    <script>
+        $(function() {
+            // console.log(1);
+            setFixedNav();
+
+            function setFixedNav() {
+                var fixedNavH = $(".fixed-nav").outerHeight();
+                var fixedTop = $(".fixed-nav").offset().top;
+                console.log(fixedNavH)
+                console.log(fixedTop);
+
+                function setFixed() {
+                    $(".fixed-nav").css({
+                        "position": "fixed",
+                        "top": "0",
+                        "left": "0",
+                        "right": "0",
+                        "z-index": "10000",
+                    });
+                    $("#placeholderBox").css({
+                        "height": fixedNavH + "px",
+                    });
+                }
+
+                function setStatic() {
+                    $(".fixed-nav").css({
+                        "position": "static",
+                    });
+                    $("#placeholderBox").css({
+                        "height": 0 + "px",
+                    });
+                }
+
+                function setScroll() {
+                    var Top = $(window).scrollTop();
+                    $(".floor").each(function(i) {
+                        if (Top >= $(this).offset().top - fixedNavH - 5) {
+                            $("#fixedNav ul li").eq(i).addClass("active").siblings().removeClass(
+                                "active");
+                        }
+                    });
+
+                    if (Top >= fixedTop) {
+                        setFixed();
+                    } else {
+                        setStatic();
+                    }
+                }
+
+                $("#fixedNav ul li").click(function() {
+                    console.log(1)
+                    var index = $(this).index();
+                    var _top = $(".floor").eq(index).offset().top;
+                    $("html,body").animate({
+                        "scrollTop": _top - fixedNavH
+                    }, 100);
+                    setFixed();
+
+                    setTimeout(function() {
+                        $("#fixedNav ul li").eq(index).addClass("active").siblings()
+                            .removeClass("active")
+                    }, 200);
+                });
+                $(window).scroll(function() {
+                    setScroll();
+                });
+
+                setScroll();
+            }
+        })
+    </script>
+</body>
+
+</html>

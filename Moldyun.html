@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>模德宝模云Moldyun</title>
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="https://cdn.htres.cn/res_v2/scenes/assets/js/swiper.jquery.min.js"></script> -->
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="container">
+            <div class="title">
+                <h4>模德宝模云Moldyun<span><a href="http://changzhou.casicloud.com/view">常州工业物联大数据平台</a></span></h4>
+            </div>
+            <div class="content">
+                <div>
+                    <h5 class="content-title">模德宝模云Moldyun</h5>
+                    <div class="content-info" title="应用场景：研发设计、生产管理、协同制造。
+                    优势：通过对接工业设计软件、连接各种加工设备、检测设备，实现工厂数字化生产。
+                    价值：云端部署，协同制造，实现模具生产全生命周期管理。
+                    疫情期间优惠说明：
+2020年2月-6月签约客户免租6个月；
+湖北省客户免租1年
+（仅限模云SAAS系统项目）">
+                        应用场景：研发设计、生产管理、协同制造。
+                        <br> 优势：通过对接工业设计软件、连接各种加工设备、检测设备，实现工厂数字化生产。
+                        <br> 价值：云端部署，协同制造，实现模具生产全生命周期管理。
+                    </div>
+                    <p style="color: #fff">疫情期间优惠说明：<br>
+                        2020年2月-6月签约客户免租6个月；<br>
+                        湖北省客户免租1年
+                        （仅限模云SAAS系统项目)</p>
+                    <!-- <p>测试账号: casicloud</p> -->
+                    <a href="https://www.moldyun.com/">试用平台</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center fixed-nav navbar">
+        <div id="fixedNav" class="container d-flex align-items-center">
+            <ul class="container-fluid d-flex justify-content-around">
+                <li class="active">产品介绍</li>
+                <li>产品功能</li>
+                <li>产品特点</li>
+                <li>功能效益</li>
+                <li>实施案例</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="placeholderBox"></div>
+
+    <div class="content-info"></div>
+    <div class="container plate floor">
+        <p class="introduction">产品介绍</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/Moldyun1.jpg" alt="">
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/Moldyun2.jpg" alt="">
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/Moldyun3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container plate floor">
+        <p class="introduction">产品功能</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/Moldyun4.jpg" alt="">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container plate floor">
+        <p class="introduction">产品特点</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/Moldyun5.jpg" alt="">
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/Moldyun6.jpg" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container plate floor">
+        <p class="introduction">功能效益</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/Moldyun7.jpg" alt="">
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/Moldyun8.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="container plate floor">
+        <p class="introduction">实施案例</p>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/Moldyun9.png" alt="">
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col text-center">
+                <img src="./img/Moldyun10.png" alt="">
+            </div>
+        </div>
+    </div>
+        <div class="container-flued">
+            <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
+                    src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px"
+                    style="margin-top: 50px;vertical-align: bottom"></iframe>
+        </div>
+    <script>
+        $(function() {
+            // console.log(1);
+            setFixedNav();
+
+            function setFixedNav() {
+                var fixedNavH = $(".fixed-nav").outerHeight();
+                var fixedTop = $(".fixed-nav").offset().top;
+                console.log(fixedNavH)
+                console.log(fixedTop);
+
+                function setFixed() {
+                    $(".fixed-nav").css({
+                        "position": "fixed",
+                        "top": "0",
+                        "left": "0",
+                        "right": "0",
+                        "z-index": "10000",
+                    });
+                    $("#placeholderBox").css({
+                        "height": fixedNavH + "px",
+                    });
+                }
+
+                function setStatic() {
+                    $(".fixed-nav").css({
+                        "position": "static",
+                    });
+                    $("#placeholderBox").css({
+                        "height": 0 + "px",
+                    });
+                }
+
+                function setScroll() {
+                    var Top = $(window).scrollTop();
+                    $(".floor").each(function(i) {
+                        if (Top >= $(this).offset().top - fixedNavH - 5) {
+                            $("#fixedNav ul li").eq(i).addClass("active").siblings().removeClass(
+                                "active");
+                        }
+                    });
+
+                    if (Top >= fixedTop) {
+                        setFixed();
+                    } else {
+                        setStatic();
+                    }
+                }
+
+                $("#fixedNav ul li").click(function() {
+                    console.log(1)
+                    var index = $(this).index();
+                    var _top = $(".floor").eq(index).offset().top;
+                    $("html,body").animate({
+                        "scrollTop": _top - fixedNavH
+                    }, 100);
+                    setFixed();
+
+                    setTimeout(function() {
+                        $("#fixedNav ul li").eq(index).addClass("active").siblings()
+                            .removeClass("active")
+                    }, 200);
+                });
+                $(window).scroll(function() {
+                    setScroll();
+                });
+
+                setScroll();
+            }
+        })
+    </script>
+</body>
+
+</html>

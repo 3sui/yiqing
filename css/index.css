@@ -45,7 +45,7 @@
 }
 
 .app-box {
-    padding: 10px 60px;
+    padding: 10px 45px;
     margin-bottom: 1rem;
     /* width: 30%; */
     height: 350px;
@@ -68,7 +68,7 @@
     margin-top: 10px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     overflow: hidden;
 
 }
@@ -273,44 +273,58 @@
 
 .alert-tel-box {
     width: 500px;
-    height: 300px;
+    height: 350px;
     background-color: #fff;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     text-align: center;
 
 }
 
 .alert-tel-title {
-    margin: 15px 0 10px 0px;
+    width: 100%;
+    height: 135px;
+    background: url(../img/alert-tel-topbg.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    /* margin: 15px 0 10px 0px; */
     /* text-align: center; */
     font-size: 20px;
 }
 
 .alert-tel-people {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
 .alert-tel-people div {
-    margin: 50px 0 0 0;
+    margin: 20px 0 0 0;
+    padding-left: 50px;
+    background: url(../img/alert-tel-icon.jpg) no-repeat 0px 30px;
+    background-size: 40px;
 }
 
 .alert-tel-people p {
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 600;
     line-height: 30px;
 }
 
-.alert-tel-people p:nth-child(1) {
-    font-weight: 600;
-    font-size: 16px;
+.alert-tel-people p span {
+    font-size: 14px;
+    /* font-weight: 600; */
+}
+
+.alert-tel-people p:nth-child(2) {
+    color: #ff8d08;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .alert-tel-box .alert-tel-box-true,
 .alert-tel-box .alert-tel-box-true1 {
     display: inline-block;
-    margin-top: 55px;
-    padding: 8px 12px;
+    margin-top: 30px;
+    padding: 8px 50px;
     font-size: 16px;
     color: #fff;
     background-color: #308bf3;

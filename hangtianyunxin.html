@@ -3,10 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <title>航天云信(云端办公)</title>
     <script src="./js/jquery.min.js"></script>
@@ -26,9 +24,12 @@
             <div class="content">
                 <div>
                     <h5 class="content-title">航天云信(云端办公)</h5>
-                    <div class="content-info"
-                        title="云信具有与微信一致的沟通体验，支持云化和私有化部署，PC和手机端，拥有语音会议、视频会议、桌面共享、文档共享、员工体温汇报、外出审批、日程管理、邮件管理、集团信息管理等功能。云信可以联动企业数据中心的监控平台，如果有报警信息会直接发到云信上面指定的人员或者部门。">
-                        云信具有与微信一致的沟通体验，支持云化和私有化部署，PC和手机端，拥有语音会议、视频会议、桌面共享、文档共享、员工体温汇报、外出审批、日程管理、邮件管理、集团信息管理等功能。云信可以联动企业数据中心的监控平台，如果有报警信息会直接发到云信上面指定的人员或者部门。
+                    <div class="content-info" title="应用场景：企业、组织即时沟通，协同办公。
+优势：全方面保护机制，安全防护，全面、拓展、易用。
+价值：改变传统管理模式，企业协同化办公。">
+                        应用场景：企业、组织即时沟通，协同办公。
+                        <br> 优势：全方面保护机制，安全防护，全面、拓展、易用。
+                        <br> 价值：改变传统管理模式，企业协同化办公。
                     </div>
                     <!-- <p>测试账号: 123456789</p> -->
                     <!-- <p style="color: #fff;">测试密码: xloong</p> -->
@@ -108,12 +109,10 @@
         </div>
     </div>
 
-    <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
-        src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px"
-        style="margin-top: 50px;vertical-align: bottom"></iframe>
+    <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px" style="margin-top: 50px;vertical-align: bottom"></iframe>
 
     <script>
-        $(function () {
+        $(function() {
             // console.log(1);
             setFixedNav();
 
@@ -147,7 +146,7 @@
 
                 function setScroll() {
                     var Top = $(window).scrollTop();
-                    $(".floor").each(function (i) {
+                    $(".floor").each(function(i) {
                         if (Top >= $(this).offset().top - fixedNavH - 5) {
                             $("#fixedNav ul li").eq(i).addClass("active").siblings().removeClass(
                                 "active");
@@ -161,7 +160,7 @@
                     }
                 }
 
-                $("#fixedNav ul li").click(function () {
+                $("#fixedNav ul li").click(function() {
                     console.log(1)
                     var index = $(this).index();
                     var _top = $(".floor").eq(index).offset().top;
@@ -170,12 +169,12 @@
                     }, 100);
                     setFixed();
 
-                    setTimeout(function () {
+                    setTimeout(function() {
                         $("#fixedNav ul li").eq(index).addClass("active").siblings()
                             .removeClass("active")
                     }, 200);
                 });
-                $(window).scroll(function () {
+                $(window).scroll(function() {
                     setScroll();
                 });
 

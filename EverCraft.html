@@ -3,10 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <title>EverCraft</title>
     <script src="./js/jquery.min.js"></script>
@@ -26,9 +24,13 @@
             <div class="content">
                 <div>
                     <h5 class="content-title">EverCraft</h5>
-                    <div class="content-info"
-                        title="EverCraft是一个3D设计协作平台，为你提供3D设计的项目协作、开源和托管服务。在这里，你可以与全世界其他设计师共同完成更有趣的创意设计。">
-                        EverCraft是一个3D设计协作平台，为你提供3D设计的项目协作、开源和托管服务。在这里，你可以与全世界其他设计师共同完成更有趣的创意设计。</div>
+                    <div class="content-info" title="应用场景：企业3D设计的项目协作、开源和托管服务
+优势：跨浏览器兼容，即时通讯，分级权限，拓展工具。
+价值：设计环节协同化、透明化。增加设计效率。">
+                        应用场景：企业3D设计的项目协作、开源和托管服务
+                        <br> 优势：跨浏览器兼容，即时通讯，分级权限，拓展工具。
+                        <br> 价值：设计环节协同化、透明化。增加设计效率。
+                    </div>
                     <!-- <p>测试账号: 123456789</p> -->
                     <p style="color: #fff;">测试账号：casic@everxyz.com</p>
                     <p style="color: #fff;">测试密码：adcGreat</p>
@@ -134,12 +136,10 @@
     </div>
 
     <div class="container-flued">
-        <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no
-            src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px"
-            style="margin-top: 50px;vertical-align: bottom"></iframe>
+        <iframe MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no src="http://58.216.47.109:9990/常州平台页尾.html" width="100%" height="399px" style="margin-top: 50px;vertical-align: bottom"></iframe>
     </div>
     <script>
-        $(function () {
+        $(function() {
             // console.log(1);
             setFixedNav();
 
@@ -173,7 +173,7 @@
 
                 function setScroll() {
                     var Top = $(window).scrollTop();
-                    $(".floor").each(function (i) {
+                    $(".floor").each(function(i) {
                         if (Top >= $(this).offset().top - fixedNavH - 5) {
                             $("#fixedNav ul li").eq(i).addClass("active").siblings().removeClass(
                                 "active");
@@ -187,7 +187,7 @@
                     }
                 }
 
-                $("#fixedNav ul li").click(function () {
+                $("#fixedNav ul li").click(function() {
                     console.log(1)
                     var index = $(this).index();
                     var _top = $(".floor").eq(index).offset().top;
@@ -196,12 +196,12 @@
                     }, 100);
                     setFixed();
 
-                    setTimeout(function () {
+                    setTimeout(function() {
                         $("#fixedNav ul li").eq(index).addClass("active").siblings()
                             .removeClass("active")
                     }, 200);
                 });
-                $(window).scroll(function () {
+                $(window).scroll(function() {
                     setScroll();
                 });
 
